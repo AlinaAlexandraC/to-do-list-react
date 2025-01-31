@@ -1,0 +1,102 @@
+.to-do-item-container {
+    width: 50vh;
+}
+
+.to-do-item {
+    background-color: white;
+    border: 1px solid rgba(13, 5, 81, 1);
+    height: 25px;
+    border-radius: 30px;
+    width: 80%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-indent: 35%;
+    font-size: 15px;
+}
+
+.to-do-item-task {
+    width: calc(70% - 3px);
+    display: flex;
+    padding-left: 3px;
+    text-indent: 3px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.to-do-item-buttons {
+    display: flex;
+    width: 25%;
+    height: 25px;
+    cursor: pointer;
+}
+
+.to-do-item-edit {
+    background-color: #567fd9;
+    width: 50%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.to-do-item-edit:hover {
+    background-color: #a2c8ff;
+    transition: all 0.2s ease-in-out;
+}
+
+.to-do-item-save {
+    background-color: #208b3a;
+    width: 50%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.to-do-item-save:hover {
+    background-color: #2dc653;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.to-do-item-delete {
+    background-color: #ba5754;
+    width: 50%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.to-do-item-delete:hover {
+    background-color: #c77876;
+    transition: all 0.2s ease-in-out;
+}
+
+img {
+    width: 20px;
+}
+
+.edit-input {
+    width: 100%;
+}
+
+.to-do-item-label {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+}

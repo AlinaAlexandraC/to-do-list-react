@@ -1,0 +1,73 @@
+.to-do-list-container {
+    width: 50vh;
+    height: 70vh;
+    background-color: azure;
+    border-radius: 30px;
+    box-shadow: azure 0px 0px 8px 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #888; /* Dark grey */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.to-do-list-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgba(13, 5, 81, 1);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.to-do-list-input-bar {  
+    width: 90%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.to-do-list-input {
+    flex: 1;
+    height: 30px;
+    border: 1px solid rgba(13, 5, 81, 1);
+    border-radius: 30px;
+    font-size: 16px;
+    text-indent: 10px;
+}
+
+.to-do-list-submit {
+    width: 25%;
+    height: 30px;
+    border: 1px solid #2346a6;
+    border-radius: 30px;
+    background: #2346a6;
+    color: azure;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.to-do-list-submit:hover {
+    background:#567fd9;
+    border-color: #567fd9;
+    transition: all 0.2s ease-in-out;
+}
+
+.to-do-list-input-bar-label {
+    height: 5%;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+}

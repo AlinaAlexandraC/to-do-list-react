@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.App-header {
+  background: rgb(48, 233, 255);
+  background: linear-gradient(180deg, rgba(48, 233, 255, 1) 0%, rgba(13, 5, 81, 1) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
