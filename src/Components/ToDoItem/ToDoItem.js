@@ -10,7 +10,7 @@ const ToDoItem = ({ index, task, removeTask, editTask, isEditing, editedTaskValu
                 <div className="to-do-item-task">
                     <input type="checkbox" id={`task-${index}`} name={`task-${index}`} value={task.task} checked={task.isChecked} onChange={(e) => markAsComplete(index, e)} />
                     {isEditing ? (
-                        <input type="text" className="edit-input" value={editedTaskValue} onChange={(e) => setEditedTaskValue(e.target.value)} />
+                        <textarea className="edit-input" value={editedTaskValue} onChange={(e) => setEditedTaskValue(e.target.value)}></textarea>
                     ) : (
                         <label htmlFor={`task-${index}`}>{task.task}</label>
                     )}
