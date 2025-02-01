@@ -12,7 +12,7 @@ const ToDoItem = ({ index, task, removeTask, editTask, isEditing, editedTaskValu
                     {isEditing ? (
                         <textarea className="edit-input" value={editedTaskValue} onChange={(e) => setEditedTaskValue(e.target.value)}></textarea>
                     ) : (
-                        <label htmlFor={`task-${index}`}>{task.task}</label>
+                        <div className={`task-description-${index}`} style={{ wordWrap: "break-word", overflowWrap: "break-word" }} >{task.task}</div>
                     )}
                 </div>
                 <div className="to-do-item-buttons">

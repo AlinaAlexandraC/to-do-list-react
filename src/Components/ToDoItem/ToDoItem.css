@@ -16,7 +16,6 @@
 }
 
 .to-do-item-task {
-    width: calc(70% - 3px);
     display: flex;
     padding-left: 3px;
     text-indent: 3px;
@@ -24,6 +23,10 @@
 
 .completed {
     text-decoration: line-through;
+}
+
+[class^="task-description"] {
+    width: 250px;
 }
 
 .to-do-item-buttons {
@@ -71,7 +74,7 @@ img {
 }
 
 .edit-input {
-    width: 100%;
+    width: 250px;
 }
 
 .to-do-item-label {
@@ -97,5 +100,15 @@ img {
     .to-do-item-delete:hover {
         background-color: #c77876;
         transition: all 0.2s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    [class^="task-description"] {
+        width: 200px;
+    }
+
+    .edit-input {
+        width: 200px;
     }
 }

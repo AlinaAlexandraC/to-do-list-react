@@ -37,6 +37,7 @@
 
 .to-do-list-input {
     flex: 1;
+    padding-right: calc(25% + 10px);
     height: 30px;
     border: 1px solid rgba(13, 5, 81, 1);
     border-radius: 30px;
